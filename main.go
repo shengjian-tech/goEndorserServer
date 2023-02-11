@@ -18,6 +18,7 @@ const (
 	// 使用 pb.XchainClient 连接xuperchain服务,发起事务处理
 	xuperChainHost string = "192.168.1.111:37101"
 	// defaultKeyPath 用于签名的证书路径,需要和客户端sdk.yaml中的complianceCheckEndorseServiceAddr保持一致
+	// 最好和节点证书隔离,如果使用同一份证书,使用SDK时会出现异常
 	defaultKeyPath = "./data/endorser/keys/"
 )
 
