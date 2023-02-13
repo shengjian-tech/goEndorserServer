@@ -26,7 +26,6 @@ Thumbs.db
 
 # project
 *.cert
-*.key
 .test
 iprepo.txt
 

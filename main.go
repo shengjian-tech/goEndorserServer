@@ -20,6 +20,21 @@ const (
 	// defaultKeyPath 用于签名的证书路径,需要和客户端sdk.yaml中的complianceCheckEndorseServiceAddr保持一致
 	// 最好和节点证书隔离,如果使用同一份证书,使用SDK时会出现异常
 	defaultKeyPath = "./data/endorser/keys/"
+
+	// 如果使用了监管合约,需要在共识配置xuper.json中配置合约账户的白名单,示例如下:
+	/*
+		, "reserved_contracts": [
+		    {
+		        "module_name": "native",
+		        "contract_name": "identity",
+		        "method_name": "verify",
+		        "args":{}
+		    }
+		]
+		,"reserved_whitelist": {
+			    "account": "XC9999999999999999@xuper"
+		}
+	*/
 )
 
 func main() {
