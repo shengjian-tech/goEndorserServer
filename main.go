@@ -27,7 +27,7 @@ const (
 		    {
 		        "module_name": "native",
 		        "contract_name": "identity",
-		        "method_name": "verify",
+		        "method_name": "verify", //可以设置方法的ACL,背书address才有调用权限,这样就能强制SDK必须开启背书合规性检查了
 		        "args":{}
 		    }
 		]
