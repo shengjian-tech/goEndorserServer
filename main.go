@@ -21,7 +21,7 @@ const (
 	// 最好和节点证书隔离,如果使用同一份证书,使用SDK时会出现异常
 	defaultKeyPath = "./data/endorser/keys/"
 
-	// 如果使用了监管合约,需要在共识配置xuper.json中配置合约账户的白名单,示例如下:
+	// 如果使用了监管合约,需要在共识配置xuper.json中配置背书服务收费地址(complianceCheckEndorseServiceFeeAddr)的合约账户,示例如下:
 	/*
 		, "reserved_contracts": [
 		    {
