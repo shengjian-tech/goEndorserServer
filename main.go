@@ -14,6 +14,7 @@ const (
 	network string = "tcp"
 	//客户端sdk.yaml中的 endorseServiceHost 一致,isNeedComplianceCheck也需要设置为true
 	//服务端server.yaml设置 endorserHosts 为本服务地址,设置endorserModule: "proxy"   enableEndorser: true (非必须,主要是 客户端 sdk.yaml 的配置)
+	//如果使用nofee模式,客户端sdk.yaml需要isNeedComplianceCheckFee: false,目前只有Java SDK可以正常配置使用
 	address string = ":8848"
 	// 使用 pb.XchainClient 连接xuperchain服务,发起事务处理
 	xuperChainHost string = "127.0.0.1:37101"
